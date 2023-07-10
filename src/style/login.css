@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+  --bg-primary : #27563A;
+  --bg-secondary : #656660;
+  --font-head : 'Plus Jakarta Sans', sans-serif;;
+  --font-reg : 'Poppins', sans-serif;
+  --font-alt : 'Bangers', cursive;
+}
+
+.container-login{
+  /* padding: 2rem 5%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  position: relative;
+  gap: 5rem;
+  height: 100vh;
+  /* background-color: #656660; */
+}
+
+.container-login .images-login{
+  width: 35rem;
+  padding-left: 5%;
+}
+
+.images-login img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container-login .form-login{
+  background-color: #27563A;
+  /* padding: 5rem; */
+  height: 100vh;
+  width: 50%;
+  /* position: relative; */
+}
+
+.form-login .login-content{
+  padding: 7rem 9rem 0 9rem;
+  font-family: var(--font-head);
+}
+
+.login-content h1{
+  color: #fff;
+  font-size: 3rem;
+}
+
+.login-content .account{
+  color: #fff;
+  font-size: .7rem;
+  padding: 1rem 0;
+}
+
+.account a{
+  color: #1D9BF0;
+  padding-left: .2rem;
+}
+
+.account a:hover{
+  color: #fff;
+}
+
+.input{
+  margin-top: 2rem;
+}
+
+.input .username{
+  border: none;
+  background-color: var(--bg-primary);
+  outline: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding-bottom: .5rem;
+  color: #fff;
+}
+
+.input .password{
+  display: flex;
+  margin: 1.5rem 0;
+  position: relative;
+  /* gap: 1rem; */
+}
+
+.password input{
+  border: none;
+  background-color: var(--bg-primary);
+  outline: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding-bottom: .5rem;
+  color: #fff;
+}
+
+.password i{
+  position: absolute;
+  color: #fff;
+  right: 0;
+  bottom: .5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-login .typo-login{
+  display: flex;
+  justify-content: space-between;
+}
+
+.typo-login .remember{
+  display: flex;
+  gap: .4rem;
+ 
+}
+
+.remember p{
+  color: #fff;
+  font-size: .8rem;
+}
+
+.typo-login .forget{
+  color: #fff;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+.forget:hover{
+  color: #0099ff;
+}
+
+.form-login .btn-login{
+  background:#fff;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid #000000;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  margin: 2rem auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.btn-login:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.form-login .btn-sosmed{
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.btn-sosmed .google{
+  background-color: #fff;
+  width: 3.5rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  padding: .2rem 0;
+  cursor: pointer;
+}
+
+.btn-sosmed .fb-login{
+  background-color: 	#3b5998;
+  width: 3.5rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  color: #fff;
+  padding: .2rem 0;
+  cursor: pointer;
+}
+
+.btn-sosmed .twit{
+  background-color:#1D9BF0;
+  width: 3.5rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  color: #fff;
+  padding: .2rem 0;
+  cursor: pointer;
+}
+
+
+.form-login .home-btn{
+  display: flex;
+  margin: 3rem 2rem;
+  font-family: var(--font-head);
+  gap: .3rem;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s all;
+  width: 6rem;
+  padding: .4rem;
+  border-radius: 2rem;
+}
+
+.home-btn:hover{
+  background-color: #fff;
+  color: #0099ff;
+}
+
+.home-btn:hover i{
+  color: var(--bg-primary);
+}
+
+.home-btn:hover a{
+  color: #27563A;
+}
+
+.home-btn i{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.home-btn a{
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width:450px){
+  .container-login{
+    display: block;
+  }
+
+  .container-login .images-login{
+    width: 95%;
+    margin-top: 2rem;
+  }
+
+  .container-login .form-login{
+    width: 100%;
+    margin-top: 2rem;
+    height: 75vh;
+  }
+
+  .form-login .login-content{
+    padding: 5rem 1rem 0 1rem;
+  }
+
+  .login-content h1{
+    text-align: center;
+  }
+
+  .login-content .account{
+    text-align: center;
+  }
+
+  .form-login .home-btn{
+    margin: 2rem auto;
+  }
+
+}
